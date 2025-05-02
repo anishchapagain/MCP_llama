@@ -1,5 +1,4 @@
-# MCP_llama
-Model Context Protocol using LLama
+# MCP_llama - Model Context Protocol using LLama
 
 # MCP File System Server
 
@@ -27,6 +26,8 @@ A server that provides a Model Context Protocol (MCP) interface to the local fil
 
 ```bash
 pip install fastapi uvicorn requests pydantic rich
+or
+uv ....... ?
 ```
 
 ## Usage
@@ -69,7 +70,7 @@ python mcp_client.py query \
   --system "You are a helpful coding assistant"
 ```
 
-You can use patterns to include multiple files:
+Use patterns to include multiple files:
 
 ```bash
 python mcp_client.py query \
@@ -86,7 +87,7 @@ Start an interactive chat session with persistent context:
 python mcp_client.py interactive --model llama3
 ```
 
-In interactive mode, you can use the following commands:
+In interactive mode, use the following commands:
 - `/files add <path>` - Add file(s) to context
 - `/files clear` - Clear file context
 - `/files list` - List current context files
